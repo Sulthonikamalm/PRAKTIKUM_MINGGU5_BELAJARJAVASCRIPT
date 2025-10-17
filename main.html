@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body class="bg-gray-200 font-sans">
+    <div class="text-center mt-10">
+        <h1 class="text-3xl text-blue-600">LAGI BELAJAR JAVASCTIPT</h1>
+        <p class="text-xl mt-3">Javascript itu untuk Logika dan interaksi web serta fungsi</p>
+    </div>
+
+    <hr class="my-4">
+
+    <!-- CONTOH VARIABEL -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Variabel dan Konsol</h2>
+        <button class="custom-button" onclick="contohVariabel()">
+            <span>Klik Aku</span>
+        </button>
+    </div>
+
+    <script>
+        function contohVariabel() {
+            let nama = "Sulthonika Mahfudz Al Mujahidin";
+            const umur = 20;
+            var aktif = true;
+            alert(`Nama: ${nama}\nUmur: ${umur}\nAktif: ${aktif}`);
+            console.log(nama, umur, aktif);
+        }
+    </script>
+
+    <!-- PERCABANGAN -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Percabangan</h2>
+        <button class="custom-button" onclick="cekNilai()">
+            <span>Cek Nilai</span>
+        </button>
+    </div>
+
+    <script>
+        function cekNilai() {
+            const nilai = prompt("Masukkan Nilai Kamu:");
+            if (nilai > 75) alert("SELAMAT KAMU MENDAPATKAN ROBUX SEBESAR 10000");
+            else alert("BELAJAR LAGI YA");
+        }
+    </script>
+
+    <!-- Array -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Array</h2>
+        <button class="custom-button" onclick="tampilArray()">
+            <span>Ini Array</span>
+        </button>
+    </div>
+
+    <script>
+        function tampilArray() {
+            const buah = ["Apel", "Jeruk", "Mangga", "Pisang"];
+            alert("Daftar buah:\n" + buah.join(", "));
+            console.log(buah);
+        }
+    </script>
+
+    <!-- Fungsi -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Penjumlahan</h2>
+        <button class="custom-button" onclick="hitungTambah()">
+            <span>Penjumlahan</span>
+        </button>
+    </div>
+
+    <script>
+        function hitungTambah() {
+            const a = parseInt(prompt("Masukkan nilai pertama:"));
+            const b = parseInt(prompt("Masukkan nilai kedua:"));
+            const hasil = a + b;
+            alert(`Hasilnya: ${hasil}`);
+        }
+    </script>
+
+    <!-- ANIMASI SEDERHANA -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Animasi Sederhana</h2>
+        <div id="kotak" class="w-20 h-20 bg-indigo-500 rounded transition-all duration-700 mx-auto"></div>
+        <button id="gerak" class="custom-button mt-3">
+            <span>Gerakan</span>
+        </button>
+    </div>
+
+    <script>
+        const box = document.getElementById("kotak");
+        const btn = document.getElementById("gerak");
+        btn.addEventListener("click", () => {
+            box.classList.toggle("translate-x-40");
+            box.classList.toggle("bg-pink-500");
+        });
+    </script>
+
+    <!-- Counter App -->
+    <div class="text-center mt-10">
+        <h2 class="text-2xl font-bold mb-3">Counter App</h2>
+        <p id="count" class="text-4xl my-4 font-mono">0</p>
+        <button id="plus" class="custom-button">
+            <span>+</span>
+        </button>
+        <button id="minus" class="custom-button ml-2">
+            <span>-</span>
+        </button>
+    </div>
+
+    <script>
+        let count = 0;
+        const tampil = document.getElementById("count");
+        document.getElementById("plus").onclick = () => tampil.innerText = ++count;
+        document.getElementById("minus").onclick = () => tampil.innerText = --count;
+    </script>
+</body>
+</html>
