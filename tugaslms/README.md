@@ -1,8 +1,4 @@
-Berikut susunan **README.md** yang rapi dan profesional untuk proyek **Formulir Validasi dengan JavaScript**, lengkap dengan heading Markdown dan format yang cocok untuk GitHub:
 
----
-
-# 🧾 Formulir Validasi dengan JavaScript
 
 ## 📘 Deskripsi Proyek
 
@@ -65,4 +61,5 @@ Proyek ini dibuat oleh **Sulthonika Mahfudz Al Mujahidin (NIM: 1202230023)**.
 
 **Nama:** Sulthonika Mahfudz Al Mujahidin
 **NIM:** 1202230023
+
 
